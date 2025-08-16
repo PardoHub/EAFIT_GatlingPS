@@ -25,5 +25,5 @@ class TransferFounds extends Simulation{
    setUp(
     scn.inject(atOnceUsers(30))
   ).protocols(httpConf);
-   
+}
  
