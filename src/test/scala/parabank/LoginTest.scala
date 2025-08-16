@@ -20,9 +20,11 @@ class LoginTest extends Simulation{
       .check(status.is(200))
     )
 
-  // 3 Load Scenario
+   // 3 Load Scenario
   setUp(
-    scn.inject(atOnceUsers(30))
+    scn.inject(rampUsersPerSec(5).to(15).during(30))
   ).protocols(httpConf);
+}
 
 }
+
