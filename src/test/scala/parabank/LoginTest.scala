@@ -26,5 +26,5 @@ class LoginTest extends Simulation{
   ).protocols(httpConf);
 }
 
-}
+
 
